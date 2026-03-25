@@ -1,7 +1,4 @@
-Alright Akshara 😄 — here’s a **clean, professional README.md** for your **NutriSmart project**.
-You can copy-paste this directly into GitHub 👇
 
----
 
 # 🥗 NutriSmart – AI-Powered Nutrition Tracker
 
