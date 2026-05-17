@@ -1,20 +1,81 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+🥗 NutriSmart – AI-Powered Nutrition Tracker
+NutriSmart is an AI-driven food analysis and nutrition tracking application that helps users understand their meals better by simply uploading a food image. The system uses Google Gemini AI to estimate nutritional values like calories, protein, carbohydrates, and fats.
 
-# Run and deploy your AI Studio app
+🚀 Features
+📷 Upload food images for analysis
+🤖 AI-based nutrition estimation using Gemini API
+🍽️ Meal tracking with history
+💧 Hydration (water intake) tracking
+⚡ Fast and responsive UI (React + Vite)
+🔥 Real-time analysis and results
+🧠 How It Works
+User uploads a food image
 
-This contains everything you need to run your app locally.
+Image is converted into base64 format
 
-View your app in AI Studio: https://ai.studio/apps/18487143-1cf7-4e71-9a7b-904ffeca3879
+The image is sent to Gemini AI
 
-## Run Locally
+AI analyzes the food and returns:
 
-**Prerequisites:**  Node.js
+Calories
+Protein
+Carbohydrates
+Fats
+Data is stored and displayed to the user
 
+🛠️ Tech Stack
+Frontend
+React.js
+Vite
+Tailwind CSS
+Backend / AI
+Google Gemini API
+Firebase (Firestore Database)
+Tools & Libraries
+dotenv
+lucide-react
+recharts
+📂 Project Structure
+NutriSmart/
+│── src/
+│   ├── components/
+│   ├── services/
+│   ├── types/
+│   ├── lib/
+│── public/
+│── package.json
+│── vite.config.ts
+│── README.md
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/NutriSmart.git
+cd NutriSmart
+2️⃣ Install dependencies
+npm install
+3️⃣ Setup Environment Variables
+Create a .env file and add:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+GEMINI_API_KEY="AIzaSyBY3gTkOUWnWB_Hf3-wMTRnQaglliCS-zQ"
+4️⃣ Run the project
+npm run dev
+📊 Database Structure
+🍽️ Meals Collection
+userId
+imageUrl
+analysis
+timestamp
+💧 Hydration Collection
+userId
+amountMl
+timestamp
+🎯 Use Cases
+Daily nutrition tracking
+Fitness and diet monitoring
+Health awareness
+Smart food analysis
+🔮 Future Enhancements
+Voice-based food input 🎤
+Multi-language support 🌍
+Barcode scanning 📦
+Personalized diet recommendations 🧠
+Mobile app version 📱
