@@ -1,0 +1,7 @@
+{
+  "name": "NutriSmart",
+  "description": "AI-powered nutrition analysis platform using vision to estimate calories and macros from food images.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

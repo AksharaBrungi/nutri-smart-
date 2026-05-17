@@ -1,0 +1,37 @@
+{
+  "entities": {
+    "MealRecord": {
+      "title": "Meal Record",
+      "description": "A record of a meal analysis",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "imageUrl": { "type": "string" },
+        "analysis": { "type": "object" }
+      },
+      "required": ["userId", "timestamp", "imageUrl", "analysis"]
+    },
+    "HydrationRecord": {
+      "title": "Hydration Record",
+      "description": "A record of water intake",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "amountMl": { "type": "number" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["userId", "amountMl", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/meals/{mealId}": {
+      "schema": "MealRecord",
+      "description": "Collection of meal records"
+    },
+    "/hydration/{recordId}": {
+      "schema": "HydrationRecord",
+      "description": "Collection of hydration records"
+    }
+  }
+}
